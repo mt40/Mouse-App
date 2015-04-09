@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <EditText 
+      android:id="@+id/ServerAddressInput"
+        android:layout_height="wrap_content"
+        android:layout_width ="fill_parent"
+        android:text="Input the Address"/>
+
+    <EditText
+        android:id="@+id/ContentInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="Password" />
+
+
+
+    <Button
+        android:id="@+id/BtnGoToMouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="onOpenMouseActivity"
+        android:text="Go to mouse activity" />
+
+    <Button
+        android:id="@+id/BtnConnect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_below="@+id/ContentInput"
+
+        android:onClick="onClickConnect"
+        android:text="Click to connect server" />
+    
+    <Button
+		android:id="@+id/btnTestView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BtnConnect"
+        android:layout_marginTop="15dp"
+        android:text="Go to test activity" />
+
+    <Button
+        android:id="@+id/BtnPPT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTestView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="19dp"
+        android:onClick="onClickPPT"
+        android:text="Click to PPT Control Page" />
+ 
+</RelativeLayout>

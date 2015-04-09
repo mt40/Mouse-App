@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/nextBtn"
+        android:layout_alignBottom="@+id/nextBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:text="BACK" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="22dp"
+        android:text="NEXT" />
+
+    <Button
+        android:id="@+id/StartBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:layout_toRightOf="@+id/backBtn"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/EndBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/StartBtn"
+        android:layout_below="@+id/nextBtn"
+        android:layout_marginTop="29dp"
+        android:text="END" />
+
+</RelativeLayout>

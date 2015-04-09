@@ -1,0 +1,28 @@
+Task 1: ================================================================================================
+- Create package com.codemaster.apps.mouse.model in MouseAndroid project.
+
+- Base on the code in the following url, implement class ClientHelper with the methods:
+	+ ArrayList<String> findAllAvailableServer(): return all server IP (ivp4) found in an array of string (research from Google).
+	+ void connectToServer(serverIP, serverPort): establish a connection to a server with a given port.
+	+ void sendMessageToServer(message): send a message to server input stream.
+	
+- Notes:
+	+ connectToServer must run on a different thread.
+	+ sendMessageToServer must run on a different thread.
+	
+- Implement a simple UI activity to test the functions.
+- Add permission to AndroidManifest.
+
+- Reference url:
+http://thinkandroid.wordpress.com/2010/03/27/incorporating-socket-programming-into-your-applications/
+========================================================================================================
+
+Task 2: ================================================================================================
+- Create package com.codemaster.apps.mouse.helper in MouesAndroid project.
+
+- Create file "TouchHelper.java" contains the class TouchHelper with the method:
+	+ public static void TouchHandler(View view, MotionEvent e): Handle all touch event in this static function, 
+	  then call it in the mouse activity.
+	+ Fix TouchHandler() so that after scrolling (up/down), do not send a coordinate signal. Only release signal.
+	  Start sending coordinate signal again after BOTH fingers are released.
+========================================================================================================

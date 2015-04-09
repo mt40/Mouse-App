@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.codemaster.apps.mouse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <com.codemaster.apps.customview.RoundExpandableMenu
+       android:id="@+id/custom1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       custom:coreSize="20dp"
+       custom:itemSize="20dp" />
+   
+</RelativeLayout>
